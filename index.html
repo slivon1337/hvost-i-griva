@@ -79,7 +79,13 @@
   <!-- ============ ГЛАВНЫЙ ЭКРАН ============ -->
   <section class="hero" id="top">
     <div class="hero__glow" aria-hidden="true"></div>
-    <div class="hero__ornament hero__ornament--right" aria-hidden="true"><img class="leaf-img" src="img/monstera.svg" alt="" decoding="async"></div>
+    <div class="hero__ornament hero__ornament--right" aria-hidden="true">
+      <picture class="leaf-wrap">
+        <!-- на узких экранах — статичный лист, чтобы не гонять SMIL-морфинг на CPU -->
+        <source media="(max-width: 900px)" srcset="img/monstera-static.svg">
+        <img class="leaf-img" src="img/monstera.svg" alt="" decoding="async">
+      </picture>
+    </div>
     <div class="hero__ornament hero__ornament--left" aria-hidden="true"><img class="leaf-img" src="img/monstera-static.svg" alt="" decoding="async"></div>
 
     <div class="hero__inner">
