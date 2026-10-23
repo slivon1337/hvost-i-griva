@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Хвост и Грива — студия стрижек на Воскова, 4 · Санкт-Петербург</title>
+<meta name="description" content="Стрижки, окрашивание и укладки в студии «Хвост и Грива». Санкт-Петербург, ул. Воскова, 4. Прайс-лист и запись.">
+<meta name="theme-color" content="#0a2a1b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Хвост и Грива — студия стрижек">
+<meta property="og:description" content="Санкт-Петербург, ул. Воскова, 4. Стрижки, окрашивание, укладки. Без спешки и конвейера.">
+<meta property="og:image" content="img/logo.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Хвост и Грива",
+  "description": "Студия стрижек на Петроградской стороне: стрижки, окрашивание, укладки.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "улица Воскова, 4",
+    "addressLocality": "Санкт-Петербург",
+    "addressCountry": "RU"
+  },
+  "telephone": "+7 921 904 73 82",
+  "openingHours": "Mo-Su 10:00-21:00",
+  "priceRange": "1000–15000 ₽",
+  "image": "img/logo.png"
+}
+</script>
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">К содержанию</a>
+
+<!-- ============ ФОН ============ -->
+<div class="bg" aria-hidden="true">
+  <div class="bg__aura bg__aura--1"></div>
+  <div class="bg__aura bg__aura--2"></div>
+  <div class="bg__aura bg__aura--3"></div>
+  <div class="bg__rings"></div>
+  <canvas class="bg__dust" id="dust"></canvas>
+  <div class="bg__grain"></div>
+  <div class="bg__vignette"></div>
+</div>
+
+<div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+
+<!-- ============ ШАПКА ============ -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a class="brand" href="#top" aria-label="Хвост и Грива — наверх">
+      <span class="brand__top">Хвост<span class="brand__and" aria-hidden="true">и</span>Грива</span>
+      <span class="brand__sub">студия стрижек</span>
+    </a>
+
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#studio">Студия</a>
+      <a href="#price">Прайс</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="header__phone" href="tel:+79219047382">+7 921 904 73 82</a>
+      <a class="btn btn--gold btn--sm" href="#contact-info">Записаться</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ ГЛАВНЫЙ ЭКРАН ============ -->
+  <section class="hero" id="top">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__ornament hero__ornament--right" aria-hidden="true"><img class="leaf-img" src="img/monstera.svg" alt="" decoding="async"></div>
+    <div class="hero__ornament hero__ornament--left" aria-hidden="true"><img class="leaf-img" src="img/monstera-static.svg" alt="" decoding="async"></div>
+
+    <div class="hero__inner">
+      <p class="eyebrow">Санкт-Петербург<span class="eyebrow__dot"></span>Петроградская сторона</p>
+
+      <h1 class="logo-mark" aria-label="Хвост и Грива — студия стрижек"><span class="sr-only">Хвост и Грива — студия стрижек</span></h1>
+
+      <div class="hero__cta">
+        <a class="btn btn--cream" href="#price">Прайс-лист</a>
+        <a class="btn btn--ghost" href="#contact-info">Записаться</a>
+      </div>
+
+      <p class="hero__meta"><span>м. Горьковская</span><i></i><span>ежедневно, 10:00–21:00</span></p>
+    </div>
+
+    <a class="hero__scroll" href="#studio" aria-label="Прокрутить к студии"><span>листайте</span><i></i></a>
+  </section>
+
+  <!-- ============ БЕГУЩАЯ СТРОКА ============ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <div class="ticker__group">
+        <span>Стрижки</span><img src="img/monstera-static.svg" alt="">
+        <span>Окрашивания</span><img src="img/monstera-static.svg" alt="">
+        <span>Укладки</span><img src="img/monstera-static.svg" alt="">
+        <span>Детские стрижки</span><img src="img/monstera-static.svg" alt="">
+        <span>Воскова, 4</span><img src="img/monstera-static.svg" alt="">
+      </div>
+      <div class="ticker__group">
+        <span>Стрижки</span><img src="img/monstera-static.svg" alt="">
+        <span>Окрашивания</span><img src="img/monstera-static.svg" alt="">
+        <span>Укладки</span><img src="img/monstera-static.svg" alt="">
+        <span>Детские стрижки</span><img src="img/monstera-static.svg" alt="">
+        <span>Воскова, 4</span><img src="img/monstera-static.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ О СТУДИИ ============ -->
+  <section class="section" id="studio">
+    <div class="wrap">
+      <p class="kicker kicker--center reveal">Студия</p>
+
+      <div class="studio">
+        <aside class="studio__card reveal" aria-label="Фотографии студии">
+          <div class="card__photo">
+            <!-- Сюда добавляются фотографии студии -->
+            <img class="card__photo-img" src="img/studio-photo.svg" alt="Студия «Хвост и Грива»" decoding="async">
+          </div>
+          <span class="card__corner card__corner--tl" aria-hidden="true"></span>
+          <span class="card__corner card__corner--tr" aria-hidden="true"></span>
+          <span class="card__corner card__corner--bl" aria-hidden="true"></span>
+          <span class="card__corner card__corner--br" aria-hidden="true"></span>
+          <div class="card__bottom">
+            <div class="card__meta">
+              <span>Петроградская сторона</span>
+              <strong>Воскова, 4</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ПРАЙС ============ -->
+  <section class="section section--price" id="price">
+    <div class="wrap">
+      <header class="sec-head sec-head--tight reveal">
+        <div>
+          <p class="kicker">Услуги</p>
+          <h2>Прайс-лист</h2>
+        </div>
+      </header>
+
+      <ul class="price">
+        <li class="price__row reveal">
+          <span class="price__idx">01</span>
+          <div class="price__main">
+            <div class="price__line">
+              <h3>Мужская стрижка</h3>
+              <span class="price__dots" aria-hidden="true"></span>
+              <span class="price__val">1 800 <i>₽</i></span>
+            </div>
+          </div>
+        </li>
+
+        <li class="price__row reveal">
+          <span class="price__idx">02</span>
+          <div class="price__main">
+            <div class="price__line">
+              <h3>Женская стрижка</h3>
+              <span class="price__dots" aria-hidden="true"></span>
+              <span class="price__val">2 000 <i>₽</i></span>
+            </div>
+          </div>
+        </li>
+
+        <li class="price__row reveal">
+          <span class="price__idx">03</span>
+          <div class="price__main">
+            <div class="price__line">
+              <h3>Окрашивание</h3>
+              <span class="price__dots" aria-hidden="true"></span>
+              <span class="price__val">5 000 – 15 000 <i>₽</i></span>
+            </div>
+          </div>
+        </li>
+
+        <li class="price__row reveal">
+          <span class="price__idx">04</span>
+          <div class="price__main">
+            <div class="price__line">
+              <h3>Укладка</h3>
+              <span class="price__dots" aria-hidden="true"></span>
+              <span class="price__val">1 000 <i>₽</i></span>
+            </div>
+          </div>
+        </li>
+
+        <li class="price__row reveal">
+          <span class="price__idx">05</span>
+          <div class="price__main">
+            <div class="price__line">
+              <h3>Детская стрижка</h3>
+              <span class="price__dots" aria-hidden="true"></span>
+              <span class="price__val">1 200 <i>₽</i></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ КОНТАКТЫ ============ -->
+  <section class="section section--contact" id="contacts">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <div>
+          <p class="kicker">Контакты</p>
+          <h2>Записаться</h2>
+        </div>
+      </header>
+
+      <div class="contact">
+        <div class="contact__info reveal" id="contact-info">
+          <address class="contact__address">
+            <span>Санкт-Петербург</span>
+            <strong>улица Воскова, 4</strong>
+          </address>
+
+          <dl class="contact__list">
+            <div class="contact__item">
+              <dt>Телефон</dt>
+              <dd><a href="tel:+79219047382">+7 921 904 73 82</a></dd>
+            </div>
+            <div class="contact__item">
+              <dt>Часы</dt>
+              <dd>ежедневно, 10:00–21:00</dd>
+            </div>
+            <div class="contact__item">
+              <dt>Метро</dt>
+              <dd>Горьковская</dd>
+            </div>
+          </dl>
+
+          <div class="contact__cta">
+            <a class="btn btn--cream btn--sm" href="tel:+79219047382">Позвонить</a>
+            <a class="btn btn--ghost btn--sm" href="https://yandex.ru/maps/org/khvost_i_griva/108723909014/" target="_blank" rel="noopener">Маршрут</a>
+          </div>
+        </div>
+
+        <a class="map reveal" href="https://yandex.ru/maps/org/khvost_i_griva/108723909014/" target="_blank" rel="noopener" aria-label="Открыть «Хвост и Грива» на Воскова, 4 в Яндекс Картах">
+          <svg class="map__svg" viewBox="0 0 800 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <g class="map__parks">
+              <rect x="556" y="60" width="196" height="124" rx="16"/>
+              <rect x="54" y="428" width="152" height="152" rx="16"/>
+            </g>
+
+            <path class="map__water" d="M-40 232 C 170 204, 296 300, 470 274 C 620 252, 716 330, 840 302 L840 344 C 700 372, 616 296, 470 318 C 300 344, 176 246, -40 276 Z"/>
+
+            <g class="map__streets">
+              <path d="M-20 116 H820"/>
+              <path d="M-20 402 H820"/>
+              <path d="M-20 566 H820"/>
+              <path d="M118 -20 V660"/>
+              <path d="M258 -20 V660"/>
+              <path d="M400 -20 V660" class="map__main"/>
+              <path d="M548 -20 V660"/>
+              <path d="M690 -20 V660"/>
+              <path d="M-20 652 L600 -20" class="map__diag"/>
+            </g>
+
+            <g class="map__caption">
+              <text x="40" y="392">БОЛЬШАЯ ПУШКАРСКАЯ</text>
+              <text transform="translate(390 604) rotate(-90)">УЛИЦА ВОСКОВА</text>
+            </g>
+          </svg>
+
+          <span class="map__pin" aria-hidden="true"><i></i></span>
+          <span class="map__label"><strong>Воскова, 4</strong><em>Хвост и Грива</em></span>
+          <span class="map__hint">Открыть в Яндекс Картах <i>↗</i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ ПОДВАЛ ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <nav class="footer__nav" aria-label="Навигация в подвале">
+        <a href="#studio">Студия</a>
+        <a href="#price">Прайс</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+
+    <p class="footer__word" aria-hidden="true">Хвост и Грива</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Фотографии студии скоро появятся">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e3a26"/>
+      <stop offset="0.55" stop-color="#082416"/>
+      <stop offset="1" stop-color="#04130c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="34%" r="58%">
+      <stop offset="0" stop-color="#2c6a48" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#2c6a48" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <rect width="800" height="1000" fill="url(#glow)"/>
+
+  <rect x="26" y="26" width="748" height="948" fill="none" stroke="#c9a86a" stroke-opacity="0.32" stroke-width="1"/>
+
+  <g fill="none" stroke="#f4eddd" stroke-opacity="0.38" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M338 468h124a12 12 0 0 1 12 12v74a12 12 0 0 1-12 12H338a12 12 0 0 1-12-12v-74a12 12 0 0 1 12-12Z"/>
+    <path d="M372 468l10-16h36l10 16"/>
+    <circle cx="400" cy="517" r="26"/>
+  </g>
+
+  <text x="400" y="640" text-anchor="middle" fill="#f4eddd" fill-opacity="0.62"
+        font-family="Montserrat, Arial, sans-serif" font-size="19" letter-spacing="8">ФОТО СТУДИИ</text>
+  <text x="400" y="676" text-anchor="middle" fill="#f4eddd" fill-opacity="0.34"
+        font-family="Montserrat, Arial, sans-serif" font-size="13" letter-spacing="3">СКОРО ЗДЕСЬ ПОЯВЯТСЯ СНИМКИ</text>
+</svg>
